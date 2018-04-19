@@ -6,6 +6,7 @@
 \usepackage[svgnames]{xcolor}
 \usepackage{framed}
 \usepackage{times}
+\usepackage{tabu}
 \usepackage{tocloft}
 \usepackage{graphicx}
 \usepackage{multirow}
@@ -59,7 +60,7 @@
     %-----------------------------------------------------------
     %Insert profile photo 
     \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-        & \multirow{1}{*}{\includegraphics[scale=0.08]{Profile}}\\
+        & \multirow{1}{*}{\includegraphics[scale=0.025]{Profile}}\\
          \\
         %-----------------------------------------------------------  
         \textbf{\Large Saim Shaikh } & \\
@@ -77,26 +78,18 @@
     \end{itemize}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \resheading{Education}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \begin{itemize}
-        \item
-        \ressubheading{Fr. Conceicao Rodrigues College of Engineering}{Bandra,Mumbai}{B.E Information Technology}{Pursuing}
-        \begin{itemize}
-	    \resitem{First Year: 6.74 CGPA}
-            \resitem{Second Year: 7.535 CGPA}
-            \resitem{Third Year: Pursuing(7.95 CGPA)}
-        \end{itemize}
-       \item
-        \ressubheading{Shri T.P. Bhatia College}{Kandivali, Mumbai}{HSC}{2013 - 2015}
-        \begin{itemize}
-            \resitem{Graduated with a 75\% average}
-        \end{itemize}
-        \item
-        \ressubheading{Holy Cross Convent School}{Mira Road}{SSC}{2012}
-        \begin{itemize}
-            \resitem{Graduated with a 89.82\% average}
-        \end{itemize}
-    \end{itemize}
+
+\begin{tabu} to 1\textwidth { | X[c] | X[c] | X[c] | X[c]| X[c]|}
+ \hline
+ Degree & College /School & University & Passing Year & Pass Percentage\\
+ \hline
+ BE. Info Tech. & Fr.CRCE &Mumbai University & 2019 & 7.3 (Till Sem V) \\
+\hline
+HSC & Shri T.P. Bhatia College (Mumbai)& MSBSHSE(State Board) & 2015 & 75\\
+\hline
+SSC & Holy Cross Convent School (Mira Road) & MSBSHSE(State Board) & 2013 & 89.82\\
+\hline
+\end{tabu}
 
 \resheading{Projects}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -105,12 +98,21 @@
         \ressubheading{Automated Traffic Surveillance System}{}{eYIC-2018}{}
         \begin{itemize}
             \resitem{Involves 3 Modules Signal Offenders,Speed Detection,Helmet Detection}
-            \resitem{Worked on Vehicle Detection and Helmet Detection using FRCNN algorithm}
-            \resitem{Written on Tflearn,Tensorflow}
+            \resitem{Individually implemented Vehicle Detection and Helmet Detection using FRCNN algorithm}
+            \resitem{Implemented using Tflearn,Tensorflow,OpenCV}
         \end{itemize}
 \end{itemize}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+  \resheading{Training}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+        \resitem {Machine learning from}\textit{"Coursera"} { by Andrew Ng.(Audited)}
+        \resitem{Programming for Everybody (Getting Started with Python)}\textit{Michigan State University}{ on Coursera}
+        \resitem{Practical Deep Learning for Coders}{using PyTorch}\textit{ Fast.ai}
+    \end{itemize}
+
+ 
 \end{document}
 
 
